@@ -1,4 +1,4 @@
-# 🚀 Imersão em Engenharia de Software - Alura & Google AI Studio & Google Antigravity
+# Imersão em Engenharia de Software - Alura & Google AI Studio & Google Antigravity
 
 Esse é o repositório central da **Imersão em Engenharia de Software com IA** da Alura (de 26/10/2026 à 03/11/2026).
 
@@ -6,30 +6,64 @@ Aqui estão reunidos dois desafios práticos desenvolvidos durante a Imersão. C
 
 ---
 
-## 📌 Visão Geral dos Desafios
+## Visão Geral dos Desafios
 
-### 🔹 Desafio 1: Calculadora com Operações Básicas
-O objetivo do primeiro desafio foi construir a lógica inicial de uma calculadora interativa em linha de comando (CLI) utilizando **Python**, cobrindo os conceitos fundamentais de lógica de programação:
+### Desafio 1: Calculadora com Operações Básicas
+
+O objetivo do primeiro desafio foi construir a lógica inicial de uma calculadora interativa em linha de comando (CLI) utilizando **Python**, com apoio do **Google AI Studio**, cobrindo os conceitos fundamentais de lógica de programação:
+
+* Estruturação do raciocínio lógico para resolver o problema;
+* Funções modulares (`def`), organizando o código em blocos reutilizáveis;
 * Entrada e saída de dados com `input()` e `print()`;
 * Conversão de tipos de dados (`float`);
 * Estruturas de controle de fluxo condicional (`if`, `elif`, `else`);
 * Implementação das **4 operações fundamentais**:
-  * ➕ Soma (`+`)
-  * ➖ Subtração (`-`)
-  * ✖️ Multiplicação (`*`)
-  * ➗ Divisão (`/`) com validação defensiva para impedir erro de divisão por zero.
+  * Soma (`+`)
+  * Subtração (`-`)
+  * Multiplicação (`*`)
+  * Divisão (`/`) com validação defensiva para impedir erro de divisão por zero, garantindo a estabilidade do script.
+
+#### Como executar
+
+1. Certifique-se de ter o Python instalado na sua máquina.
+2. Execute o script diretamente pelo terminal:
+
+```bash
+python calculadora.py
+```
 
 ---
 
-### 🔹 Desafio 2: Expansão e Refatoração com IA
-No segundo desafio, utilizamos ferramentas de IA (**Google AI Studio** e **Google Antigravity**) como parceiras de *pair programming* para analisar, explicar e expandir a arquitetura da calculadora, agregando novas funcionalidades matemáticas que utilizam dois operandos:
-* **Potenciação (`**`):** Elevação de uma base ao expoente fornecido;
-* **Porcentagem (`%`):** Cálculo proporcional de porcentagem ($X\%$ de $Y$) através da expressão matemática `(num1 * num2) / 100`;
-* **Tratamento de entradas inválidas:** Feedback claro para o usuário caso um operador não suportado seja inserido.
+### Desafio 2: Expansão e Refatoração com IA
+
+No segundo desafio, utilizamos ferramentas de IA (**Google AI Studio** e **Google Antigravity**) como parceiras de *pair programming* para analisar, explicar e expandir a arquitetura da calculadora, simulando o fluxo real de Engenharia de Software em 3 etapas:
+
+1. **Explorar:** mapear a arquitetura e as responsabilidades dos módulos existentes;
+2. **Evoluir:** implementar novas funcionalidades matemáticas que utilizam dois operandos;
+3. **Testar:** validar cenários de borda e garantir a ausência de regressões nas funções anteriores.
+
+As novas funcionalidades adicionadas foram:
+
+* **Potenciação (`**`):** elevação de uma base ao expoente fornecido;
+* **Porcentagem (`%`):** cálculo proporcional de porcentagem ($X\%$ de $Y$) através da expressão matemática `(num1 * num2) / 100`;
+* **Tratamento de entradas inválidas:** feedback claro para o usuário caso um operador não suportado seja inserido.
+
+Foram feitas pequenas alterações no código da calculadora original para incluir essas funções, mantendo o que já funcionava.
+
+#### Como executar
+
+Do mesmo jeito que a calculadora básica:
+
+1. Certifique-se de que o Python está devidamente instalado na sua máquina.
+2. Execute o script diretamente pelo terminal:
+
+```bash
+python calculadora_porcentagem.py
+```
 
 ---
 
-## 🛠️ Tecnologias e Ferramentas Utilizadas
+## Tecnologias e Ferramentas Utilizadas
 
 * **Linguagem:** Python 3.x
 * **Versionamento:** Git & GitHub
@@ -39,67 +73,8 @@ No segundo desafio, utilizamos ferramentas de IA (**Google AI Studio** e **Googl
 
 ---
 
-## 📂 Estrutura do Repositório
+## Autor
 
-```text
-├── desafio-1/
-│   └── calculadora_basica.py    # Versão inicial com as 4 operações
-├── desafio-2/
-│   └── calculadora_avancada.py  # Versão expandida com potência e porcentagem
-└── README.md
-```
+Denyel Rógeres 
 
-*(Caso você tenha deixado tudo em um único arquivo, pode manter apenas `calculadora.py`)*.
-
----
-
-## 💻 Como Executar o Projeto
-
-1. **Clone este repositório:**
-   ```bash
-   git clone https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git
-   ```
-
-2. **Acesse a pasta do projeto:**
-   ```bash
-   cd NOME_DO_REPOSITORIO
-   ```
-
-3. **Execute o arquivo Python:**
-   ```bash
-   python calculadora.py
-   ```
-
----
-
-## 🧪 Exemplos de Uso
-
-```text
-=================================
-     CALCULADORA EM PYTHON       
-=================================
-Operações disponíveis:
-  +   : Soma
-  -   : Subtração
-  *   : Multiplicação
-  /   : Divisão
-  **  : Potenciação (Base elevada ao Expoente)
-  %   : Porcentagem (X% de Y)
----------------------------------
-Digite o primeiro número: 15
-Digite a operação (+, -, *, /, **, %): %
-Digite o segundo número: 200
----------------------------------
-Resultado: 15.0% de 200.0 = 30.0
-=================================
-Fim do cálculo. Até a próxima!
-```
-
----
-
-## 👨‍💻 Autor
-
-Desenvolvido por **[Seu Nome]** durante a Imersão em Engenharia de Software Alura + Google.
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/SEU_LINKEDIN)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SEU_USUARIO)
+Acesse meu perfil no [LinkedIn](https://www.linkedin.com/in/denyelrogeres).
